@@ -175,7 +175,7 @@ a:hover {
 	}
 
 ul.list-2 {
-	font-size:15px;
+	font-size:18px;
 	margin:10px 0px 0px 15px;
 	padding:0px;
 	color:#020202;
@@ -232,10 +232,10 @@ div.mainline {
 }
 		
 div.paragraph {
-	font-size:15px;
+	font-size:18px;
 	color:#020202;
 	padding:5px 20px 5px 10px;
-	line-height: 21px;
+	line-height: 25px;
 }			
 div.info {
 	font-size:15px;
