@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/jquery.js"></script> 	
+		<script> 
+			$(function(){ 
+				$("#col-right").load("template_right_column.html");  
+				$("#head_id").load("template_header.html");  
+				$("#logotext").load("template_conference.html");
+			}); 
+		</script> 	
+		<script>
+			nl_lang = "en"; nl_color = "blue"; nl_compact = "0"; nl_accordion = "1"; nl_contact = "n:Shahar Nevo, Bar-Ilan University|p:+972-35318769";
+		</script>
+		<script src="javascript/nagishli.js?v=2.3" charset="utf-8" defer></script>
+		<div id="head_id"> </div>
+	</head>
+	<body>
+		<div id="container">
+			<div id="container-header"> 
+				<img src="images/logo.jpg" alt="" id="logo">
+				<div id="logotext" class="logotext"></div>
+			</div>
+			<div id="nav">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="Venue.html">Venue & Hotel</a></li>
+				  <li><a href="Updates.html">Updates</a></li>
+				  <li><a href="Participants.html">Participants</a></li>
+				  <li><a href="Program.html">Program</a></li>
+				  <li><a href="Committee.html">Committee</a></li>
+				  <li style="border-right: medium none;"><a href="Links.html">Links</a></li>
+				</ul>
+			</div>
+			<div id="site-content">
+				<div id="col-left">
+					<div style = "font-size:50px; color:#020202; font-weight:bold;"; class="announcements">Useful Links</div> </br>
+
+					<div style = "font-size:20px; line-height: 45px; color:#020202; font-weight:bold;" class="paragraph"> </br>
+						<a href="https://www.iaa.gov.il/en/">Ben Gurion Airport</a> </br>
+						<a href="https://www.rail.co.il/en/">Israel Railways</a> </br>
+						<a href="http://www.israelweather.co.il/english/index.asp">Weather in Israel</a> </br>
+						<a href="http://www.egged.co.il/eng/">Egged Bus Company</a> </br>
+						<a href="https://www.dan.co.il/">Dan Bus Company</a> </br>
+						<a href="https://moovitapp.com/israel-1/poi/en">Moovit - realtime public transit navigation</a> </br>
+						<a href="http://www.worldtimezone.com/time/wtzresult.php?CiID=6476">Local time</a> </br>
+						<a href="http://www.boi.org.il/en/Pages/Default.aspx">Bank of Israel</a> </br>
+						<a href="https://embassies.gov.il/washington/ConsularServices/Pages/Visa-Information.aspx">Visa to Israel</a> </br>
+					</div>
+				</div>
+				
+				<div class = "col-right" id="col-right"> 
+					<!-- INSERT HERE COLRIGHT IN CASE JQUERY IS NOT WORKING-->			
+				</div>				
+			</div>
+			<div class="footer">
+				&copy; Copyright 2022. Designed by <a class ="footer" target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a> and maintained by Ziv Shem-Tov
+			</div>
+		</div>
+	</body>
+</html>
