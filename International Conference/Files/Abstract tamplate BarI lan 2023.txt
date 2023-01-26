@@ -1,0 +1,5 @@
+\talk{Surname}{First name}{Affiliation}
+{Title of talk}
+{Body of abstract}
+
+Please don't use any macros
