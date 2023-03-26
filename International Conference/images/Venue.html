@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/jquery.js"></script> 	
+		<script> 
+			$(function(){ 
+				$("#col-right").load("template_right_column.html");  
+				$("#head_id").load("template_header.html");  
+				$("#logotext").load("template_conference.html");
+			}); 
+		</script> 	
+		<script>
+			nl_lang = "en"; nl_color = "blue"; nl_compact = "0"; nl_accordion = "1"; nl_contact = "n:Shahar Nevo, Bar-Ilan University|p:+972-35318769";
+		</script>
+		<script src="javascript/nagishli.js?v=2.3" charset="utf-8" defer></script>
+		<div id="head_id"> </div>
+	</head>
+	<body>
+		<div id="container">
+			<div id="container-header"> 
+				<img src="images/logo.jpg" alt="" id="logo">
+				<div id="logotext" class="logotext"></div>
+			</div>
+			<div id="nav">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="Venue.html">Venue & Hotel</a></li>
+				  <li><a href="Updates.html">Updates</a></li>
+				  <li><a href="Participants.html">Participants</a></li>
+				  <li><a href="Program.html">Program</a></li>
+				  <li><a href="Committee.html">Committee</a></li>
+				  <li style="border-right: medium none;"><a href="Links.html">Links</a></li>
+				</ul>
+			</div>
+			<div id="site-content">
+				<div id="col-left">
+					<div style = "font-size:50px; color:#020202; font-weight:bold;"; class="announcements">Venue</div> </br>
+						
+					
+					
+					<div class="paragraph">
+						The Conference will be held in <a href="https://www.biu.ac.il/en">Bar-Ilan University</a>, Ramat-Gan. </br> </br>
+						<a href="http://en.wikipedia.org/wiki/Ramat_Gan">Ramat-Gan</a> (Hebrew: &#1512;&#1502;&#1514;-&#1490;&#1503;) is a city in the Tel Aviv District of Israel,
+						located east of the municipality of Tel Aviv and part of the Tel Aviv metropolitan areal. </br></br>
+						
+						In order to get from the <a href="https://www.iaa.gov.il/en/">Ben Gurion Airport</a>
+						to Bar-Ilan University, take a train to  <a href="https://www.rail.co.il/en/stations/tel-aviv-hashalom">Tel-Aviv HaShalom</a>. 
+						From the station one can reach the University by bus (line 56, 64, 116, 364, 472 or 473). </br></br>
+ 
+						For those who arrives by cars please click <a href="https://www.google.com/maps?q=bar+ilan&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjP9d_cp_T7AhUMXRoKHVd8CKgQ_AUoAnoECAEQBA">here</a> for directions.
+
+						</br>
+						
+						<img style="margin:15px 20px 0px 20px;" src="images/BarIlanVenue1.jpg" alt="" height="150" width="290"> <img src="images/BarIlanVenue2.jpg" alt="" height="150" width="290">
+						</br> </br>
+
+						<a href="https://en.kmc-hotel.co.il/">Kfar Maccabiah Hotel</a> is located in 3km from Bar-Ilan university. The organizers will provide a transportation from\ to the hotel. </br>
+						<img style="margin:15px 80px 0px 120px;" src="images/macabia.jpg" alt="" height="240" width="380"> 
+						<img style="margin:15px 40px 0px 120px;" src="images/macabia-to-bi.jpg" alt="" height="240" width="380">
+
+						</br></br>
+						Please do not hesitate to contact us if you need our assistance.
+					</div>
+				</div>
+
+				<div class = "col-right" id="col-right"> 
+					<!-- INSERT HERE COLRIGHT IN CASE JQUERY IS NOT WORKING-->			
+				</div>
+			</div>			  
+			<div class="footer">
+				&copy; Copyright 2023. Designed by <a class ="footer" target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a> and maintained by Ziv Shem-Tov
+			</div>
+		</div>
+	</body>
+</html>

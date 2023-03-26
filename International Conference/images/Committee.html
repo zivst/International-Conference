@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/jquery.js"></script> 	
+		<script> 
+			$(function(){ 
+				$("#col-right").load("template_right_column.html");  
+				$("#head_id").load("template_header.html");  
+				$("#logotext").load("template_conference.html");
+			}); 
+		</script> 	
+		<script>
+			nl_lang = "en"; nl_color = "blue"; nl_compact = "0"; nl_accordion = "1"; nl_contact = "n:Shahar Nevo, Bar-Ilan University|p:+972-35318769";
+		</script>
+		<script src="javascript/nagishli.js?v=2.3" charset="utf-8" defer></script>
+		<div id="head_id"> </div>
+	</head>
+	<body>
+		<div id="container">
+			<div id="container-header"> 
+				<img src="images/logo.jpg" alt="" id="logo">
+				<div id="logotext" class="logotext"></div>
+			</div>
+			<div id="nav">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="Venue.html">Venue & Hotel</a></li>
+				  <li><a href="Updates.html">Updates</a></li>
+				  <li><a href="Participants.html">Participants</a></li>
+				  <li><a href="Program.html">Program</a></li>
+				  <li><a href="Committee.html">Committee</a></li>
+				  <li style="border-right: medium none;"><a href="Links.html">Links</a></li>
+				</ul>
+			</div>
+			<div id="site-content">
+			
+				<div id="col-left">
+					<div style = "font-size:40px; color:#020202; font-weight:bold;"; class="announcements">Organizing Committee</div> </br>
+					
+					<div style = "font-size:20px; margin-left:20px; line-height: 33px; color:#020202; class="paragraph">
+						
+						<!--
+						Mark Agranovsky, Bar-Ilan University </br>
+						Lavi Karp, ORT Braude College </br>
+						Anatoly Golberg, Holon Institute of Technology </br>
+						Mikhail Sodin, Tel Aviv University </br>
+
+
+						should be 12
+						
+						-->
+						
+						Mark Agranovsky, Bar-Ilan University, Israel </br>
+						Catherone Beneteau, University of South Florida, USA </br>
+						Anatoly Golberg, Holon Institute of Technology, Israel  </br>
+						Lavi Karp, Braude College, Israel </br>
+						Dmitry Khavinson, University of South Florida, USA </br>
+						Andrei K. Lerner, Bar-Ilan University, Israel </br>
+						Nir Lev, Bar-Ilan University, Israel </br>
+						Shahar Nevo, Bar-Ilan University, Israel </br>
+						Andre Reznikov, Bar-Ilan University, Israel </br>
+						David Shoikhet, Holon Institute of Technology, Israel </br>
+						Mikhail L. Sodin, Tel-Aviv University, Israel </br>
+						Boris Solomyak, Bar-Ilan University, Israel </br>
+						Uzi Vishne, Bar-Ilan University, Israel </br>
+					</div>
+				</div>
+			
+				<div class = "col-right" id="col-right"> 
+					<!-- INSERT HERE COLRIGHT IN CASE JQUERY IS NOT WORKING-->			
+				</div>				
+			</div>
+			<div class="footer">
+				&copy; Copyright 2023. Designed by <a class ="footer" target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a> and maintained by Ziv Shem-Tov
+			</div>
+		</div>
+	</body>
+</html>

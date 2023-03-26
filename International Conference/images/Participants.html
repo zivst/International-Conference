@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/jquery.js"></script> 	
+		<script> 
+			$(function(){ 
+				$("#col-right").load("template_right_column.html");  
+				$("#head_id").load("template_header.html");  
+				$("#logotext").load("template_conference.html");
+			}); 
+			function setIndexOfTableCells() {
+				var len = document.getElementById("myTable").rows.length;
+				for (var i = 1; i < len; i++) {
+					document.getElementById("myTable").rows[i].cells[0].innerHTML = i + ".";
+				}
+			}			
+			function tableToText() {
+				var txt = "";
+				var len = document.getElementById("myTable").rows.length;
+				for (var i = 1; i < len; i++) {
+					row_i = document.getElementById("myTable").rows[i];
+					txt += row_i.cells[0].innerHTML + " " + row_i.cells[1].innerHTML + ", " + row_i.cells[2].innerHTML + ", " + row_i.cells[3].innerHTML + "</br>";
+				}
+				document.getElementById("participantList").innerHTML = txt;
+			}
+		</script> 	
+		<script>
+			nl_lang = "en"; nl_color = "blue"; nl_compact = "0"; nl_accordion = "1"; nl_contact = "n:Shahar Nevo, Bar-Ilan University|p:+972-35318769";
+		</script>
+		<script src="javascript/nagishli.js?v=2.3" charset="utf-8" defer></script>
+		<div id="head_id"> </div>
+	</head>
+	<body>
+		<div id="container">
+			<div id="container-header"> 
+				<img src="images/logo.jpg" alt="" id="logo">
+				<div id="logotext" class="logotext"></div>
+			</div>
+			<div id="nav">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="Venue.html">Venue & Hotel</a></li>
+				  <li><a href="Updates.html">Updates</a></li>
+				  <li><a href="Participants.html">Participants</a></li>
+				  <li><a href="Program.html">Program</a></li>
+				  <li><a href="Committee.html">Committee</a></li>
+				  <li style="border-right: medium none;"><a href="Links.html">Links</a></li>
+				</ul>
+			</div>
+			<div id="site-content">
+			
+				<div id="col-left">
+					<div style = "font-size:50px; color:#020202; font-weight:bold;"; class="announcements">List Of Participants</div> </br></br>
+
+
+					<div style = "font-size:18px; color:#020202; margin:3px 3px 5px 3px; padding:3px 3px 3px 3px; line-height: 33px;" id="participantList">
+						<table id="myTable">
+							<tr> <th style="font-weight:bold";> # </th><th style="font-weight:bold";>Full Name</th> <th style="font-weight:bold";>Institution</th> <th style="font-weight:bold";>Country</th> </tr>
+							
+							<tr> <th></th><th>Mark Agranovsky</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Dov Aharonov</th> <th>Technion</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Ravshan Ashurov</th> <th>Institute of Mathematics</th> <th>Uzbekistan</th> </tr>
+							<tr> <th></th><th>Catherine Beneteau</th> <th>University of South Florida</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Walter Bergweiler</th> <th>Keil University</th> <th>Germany</th> </tr>
+							<tr> <th></th><th>Roger Barnard</th> <th>Texas Tech University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Lucian Beznea</th> <th>Simion Stoilow Institute of Mathematics</th> <th>Romania</th> </tr>
+							<tr> <th></th><th>Dmitriy Bilyk</th> <th>University of Minnesota</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Alexander Borichev</th> <th>Aix-Marseille Universite</th> <th>France</th> </tr>
+							<tr> <th></th><th>Arthur Danielyan</th> <th>University of South Florida</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Susanna Dann</th> <th>Universidad de los Andes</th> <th>Columbia</th> </tr>
+							<tr> <th></th><th>Mark Elin</th> <th>ORT Braude College</th> <th>Israel <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Sergey Favorov</th> <th>Jagiellonian University</th> <th>Poland</th> </tr>
+							<tr> <th></th><th>Anatoly Golberg</th> <th>Holon Institute of Technology</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Eric Grinberg</th> <th>University of Massachusetts Boston</th> <th>USA <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Jill Guerra</th> <th>Harvard University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Haakan Hedenmalm</th> <th>Royal Institute of Technology</th> <th>Sweden</th> </tr>
+							<tr> <th></th><th>Aimo Hinkkanen</th> <th>University of Illinois at Urbana-Champaign</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Alex Iosevich</th> <th>University of Rochester</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Oleg Ivrii</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Benajmin Jaye</th> <th>Georgia Institute of Technology</th> <th>USA <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Vladimir Kadets</th> <th>Holon Institute of Technology</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>David Kalaj</th> <th>University of Montenegro</th> <th>Montenegro</th> </tr>
+							<tr> <th></th><th>Eyal Kaplan</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Oleksiy Karlovych</th> <th>Universidade NOVA de Lisboa</th> <th>Portugal</th> </tr>
+							<tr> <th></th><th>Lavi Karp</th> <th>ORT Braude College</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Dmitry Khavinson</th> <th>University of South Florida</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Alexander Koldobsky</th> <th>University of Missoury-Columbia</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Anna Kononova</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Gady Kozma</th> <th>Weizmann Institute of Sciences</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Samuel Krushkal</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Peter Kuchment</th> <th>Texas A&amp;M University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Aleksei Kulikov</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Kirill Lazebnik</th> <th>University of North Texas</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Andrei Lerner</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Nir Lev</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Genadi Levin</th> <th>Hebrew University of Jerusalem</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Elijah Liflyand</th> <th> Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Alexander Logunov</th> <th>University of Geneva</th> <th>Switzerland</th> </tr>
+							<tr> <th></th><th>Nikolai Nadirashvili</th> <th>Institut de Mathematiques de Marseille</th> <th>France <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Shahar Nevo</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Alon Nishry</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Shahaf Nitzan</th> <th>Georgia Institute of Technology</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Alexander Olevskii</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Eric Todd Quinto</th> <th>Tufts University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Istvan Prause</th> <th>University of Eastern Finland</th> <th>Finland</th> </tr>
+							<tr> <th></th><th>Andre Reznikov</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Boris Rubin</th> <th>Louisiana State University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Antti Rasila</th> <th>Guangdong Technion</th> <th>China</th> </tr>
+							<tr> <th></th><th>Oliver Roth</th> <th>University of Wurzburg</th> <th>Germany</th> </tr>
+							<tr> <th></th><th>Dmitry Ryabogin</th> <th>Kent State University</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Eero Saksman</th> <th>University of Helsinki</th> <th>Finland <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Andrea Sartori</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Barry Simon</th> <th>California Institute of Technology</th> <th>USA</th> </tr>
+							<tr> <th></th><th>Mikhail Sodin</th> <th>Tel Aviv University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Boris Solomyak</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Toshiyuki Sugawa</th> <th>Tohoku University</th> <th>Japan</th> </tr>
+							<tr> <th></th><th>Xavier Tolsa</th> <th>Universitat Autonoma de Barcelona</th> <th>Spain</th> </tr>
+							<tr> <th></th><th>Uzi Vishne</th> <th>Bar-Ilan University</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Anna Vishnyakova</th> <th>Holon Institute of Technology</th> <th>Israel</th> </tr>
+							<tr> <th></th><th>Alexander Volberg</th> <th>Michigan State University</th> <th>USA <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Matti Vuorinen</th> <th>University of Turku</th> <th>Finland <strong>(tentatively)</strong></th> </tr>
+							<tr> <th></th><th>Peter Yuditskii</th> <th>Johannes Kepler Universitat</th> <th>Austria <strong>(tentatively)</strong></th> </tr>
+						</table>
+					</div>
+				</div>
+				
+				
+				
+				<div class = "col-right" id="col-right"> 
+					<!-- INSERT HERE COLRIGHT IN CASE JQUERY IS NOT WORKING-->			
+				</div>				
+			</div>
+			<div class="footer">
+				&copy; Copyright 2023. Designed by <a class ="footer" target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a> and maintained by Ziv Shem-Tov
+			</div>
+		</div>
+	</body>
+	<script> 
+		//setIndexOfTableCells(); 
+		tableToText(); 
+	</script> 	
+</html>

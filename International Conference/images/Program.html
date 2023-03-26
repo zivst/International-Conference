@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="javascript/jquery.js"></script> 	
+		<script> 
+			$(function(){ 
+				$("#col-right").load("template_right_column.html");  
+				$("#head_id").load("template_header.html");  
+				$("#logotext").load("template_conference.html");
+			}); 
+		</script> 	
+		<script>
+			nl_lang = "en"; nl_color = "blue"; nl_compact = "0"; nl_accordion = "1"; nl_contact = "n:Shahar Nevo, Bar-Ilan University|p:+972-35318769";
+		</script>
+		<script src="javascript/nagishli.js?v=2.3" charset="utf-8" defer></script>
+		<div id="head_id"> </div>
+	</head>
+	<body>
+		<div id="container">
+			<div id="container-header"> 
+				<img src="images/logo.jpg" alt="" id="logo">
+				<div id="logotext" class="logotext"></div>
+			</div>
+			<div id="nav">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="Venue.html">Venue & Hotel</a></li>
+				  <li><a href="Updates.html">Updates</a></li>
+				  <li><a href="Participants.html">Participants</a></li>
+				  <li><a href="Program.html">Program</a></li>
+				  <li><a href="Committee.html">Committee</a></li>
+				  <li style="border-right: medium none;"><a href="Links.html">Links</a></li>
+				</ul>
+			</div>
+			<div id="site-content">
+			
+			
+				<div id="col-left">
+					<div style = "font-size:50px; color:#020202; font-weight:bold;"; class="announcements">Program</div> </br>
+					<div style = "font-size:30px; color:#020202"> To Be Announced </div>
+					<!--
+					<div id="participantList">
+						<div class="subsubtitle"><a href="Files/ProgramPIMA18.pdf"><strong>Printed version</strong></a>&nbsp;<img src="images/acrobat.gif" alt="" height="15" width="15"></div>
+						<div class="subsubtitle"><a href="Files/Abstracts18.pdf"><strong>Abstracts</strong></a>&nbsp;<img src="images/acrobat.gif" alt="" height="15" width="15"></div>
+					</div></br></br>
+					<div id="participantList">
+						<div style="font-weight:bold;" class="paragraph"> Monday, May 28 </div>
+						<table>
+							<tr> <th style="font-weight:bold; width:100px;";>Time</th> <th style="font-weight:bold";>Event</th> </tr>
+							<tr> <th>15:00 - 16:00 </th> <th>Registration</th> </tr>
+							<tr> <th>16:15 - 16:45 </th> <th>Welcome Chairperson: Anatoly Golberg</th> </tr>
+							<tr> <th>17:00 - 18:00 </th> <th>David Shoikhet, Holon Institute of Technology, Israel Resolvent Methods, Starlike Functions and Backward Flow Invariant Domains</th> </tr>
+							<tr> <th>18:30 </th> <th>Get together</th> </tr>
+						 </table> </br>
+						 
+						<div style="font-weight:bold;" class="paragraph"> Monday, May 28 </div>
+						<table>
+							<tr> <th style="font-weight:bold; width:100px;">Time</th> <th style="font-weight:bold";>Event</th> </tr>
+							<tr> <th>15:00 - 16:00 </th> <th>Registration</th> </tr>
+							<tr> <th>16:15 - 16:45 </th> <th>Welcome Chairperson: Anatoly Golberg</th> </tr>
+							<tr> <th>17:00 - 18:00 </th> <th>David Shoikhet, Holon Institute of Technology, Israel Resolvent Methods, Starlike Functions and Backward Flow Invariant Domains</th> </tr>
+							<tr> <th>18:30 </th> <th>Get together</th> </tr>
+						 </table> </br>
+					</div>
+					-->
+					<div class="paragraph">
+
+					</div>
+				</div>
+			
+				<div class = "col-right" id="col-right"> 
+					<!-- INSERT HERE COLRIGHT IN CASE JQUERY IS NOT WORKING-->			
+				</div>				
+			</div>
+			<div class="footer">
+				&copy; Copyright 2023. Designed by <a class ="footer" target="_blank" href="http://www.htmltemplates.net">htmltemplates.net</a> and maintained by Ziv Shem-Tov
+			</div>
+		</div>
+	</body>
+</html>
